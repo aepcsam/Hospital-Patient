@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/094/846/small/healthcare-hospital-clinic-doctor-logo-image-free-vector.jpg" alt="logo" class="logo">
+            <ul class="nav-link">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/create">Patient Create</a></li>
+                <li><a href="/view">Patient View</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>
+            Patient Search 
+        
+        </h1>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>patient_id</th>
+                    <th>patient_name</th>
+                    <th>patient_age</th>
+                    <th>patient_address</th>
+                    <th>patient_mobileNo</th>
+                    <th>patient_disease</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0;i<patients.length;i++){ %>
+                    
+                <tr>
+                    <td><%= patients[i]._id %></td>
+                    <td><%= patients[i].patient_name %></td>
+                    <td><%= patients[i].patient_age %></td>
+                    <td><%= patients[i].patient_address  %></td>
+                    <td><%= patients[i].patient_mobileNo %></td>
+                    <td><%= patients[i].patient_disease %></td>
+                    <td><a href="/search/<%= patients[i]._id %>"><button type="submit" class="update">Update</button></a></td>
+                    <td><a href="/delete/<%=patients[i]._id %>"><button type="submit" class="delete">Delete</button></a></td>
+                </tr>
+        
+
+                <% } %>
+
+            </tbody>
+           
+        </table>
+
+
+    </div>
+
+
+            
+
+
+              
+
+   
+
+     
+
+</body>
+
+</html>

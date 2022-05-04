@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/5e0a94a483.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/094/846/small/healthcare-hospital-clinic-doctor-logo-image-free-vector.jpg" alt="logo" class="logo">
+            <ul class="nav-link">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/create">Patient Create</a></li>
+                <li><a href="/view">Patient View</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>
+            Patient Create Data
+        </h1>
+        <form action="/home" method="post" class="data-form">
+           
+
+                <div class="patient">
+                <label for="patient_name">Patient Name </label>
+                <input type="text" name="patient_name" placeholder="Enter Name">
+            </div>
+
+            <div class="patient">
+                <label for="patient_age">Patient Age </label>
+                <input type="number" name="patient_age" placeholder="Enter Age">
+            </div>
+
+
+            <div class="patient">
+                <label for="patient_address">Patient Address </label>
+                <input type="text" name="patient_address" placeholder="Enter Address">
+            </div>
+
+            <div class="patient">
+                <label for="patient_mobileNo">Patient Mobile No </label>
+                <input type="text" name="patient_mobileNo" placeholder="Enter Mobile No">
+            </div>
+
+            <div class="patient">
+                <label for="patient_disease">Patient Disease </label>
+                <input type="text" name="patient_disease" placeholder="Enter Disease">
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

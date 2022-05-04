@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Nav Start */
+
+body {
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkorchid;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 80px;
+    margin: 10px;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-link li {
+    padding: 10px;
+    margin-left: 10px;
+    height: 50px;
+    /* background-color: aquamarine; */
+    /* border: 1px solid rgb(173, 169, 169); */
+    border-radius: 10px;
+    /* box-shadow: 5px 10px 10px black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link li:hover {
+    background-color: tan;
+    transition: all ease-out 0.4s;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+
+/* Nav End */
+
+
+/*  */
+
+.container {
+    width: 700px;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: blueviolet;
+    padding: 10px 0 10px 0
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.data-form input {
+    margin: 10px;
+    width: 250px;
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.data-form input::placeholder {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.patient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+button {
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/* delete */
+
+.delete {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    width: 70px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.update {
+    text-align: center; 
+    background-color: rgb(69, 128, 238);
+    color: white;
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+}
+
+
+
+/* All */
+table,tr,th,td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
