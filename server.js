@@ -6,6 +6,7 @@ const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 4000;
+const url = process.env.MONGO_URL;
 
 
 
@@ -27,7 +28,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://aepcsam:Mj3!AA@cluster0.pxcab.mongodb.net/hospital-project?retryWrites=true&w=majority');
+mongoose.connect(url);
 
 const userSchema = new mongoose.Schema({
     email: String,
